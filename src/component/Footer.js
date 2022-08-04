@@ -1,14 +1,15 @@
 import React from 'react';
 
-const Footer =()=>{
+const Footer =(props)=>{
+    console.log(props)
     return(
-        <div>
+        <React.Fragment>
             <center>
                 <hr/>
-                <h3>&copy; vsdeveloper</h3>
-                {/* <hr/> */}
+                <h3>&copy;vsdeveloper {props.year} {props.month}</h3>
+               
             </center>
-        </div>
+        </React.Fragment>
         
     )
 }
